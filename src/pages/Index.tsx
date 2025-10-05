@@ -2,10 +2,11 @@ import { ArrowRight, BookOpen, Users, Award, Sparkles, GraduationCap, Globe, Tre
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import heroImage from "@/assets/hero-educators.jpg";
+import Header from "@/components/Header";
+import heroImage from "@/assets/hero-indian-teachers.jpg";
 
 const Index = () => {
-  const programs = [
+  const courses = [
     {
       title: "PGDE-I + IBEC",
       subtitle: "For aspiring teachers",
@@ -80,8 +81,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden mt-20">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -103,7 +105,7 @@ const Index = () => {
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="heroSecondary" size="xl">
-              See Programmes
+              See Courses
             </Button>
           </div>
         </div>
@@ -176,38 +178,38 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Programs Section */}
-      <section className="py-24 bg-background">
+      {/* Courses Section */}
+      <section className="py-24 bg-background" id="courses">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Programs That Match Your Journey
+              Courses That Match Your Journey
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Whether you're an aspiring teacher, an in-service professional, or an educator ready to lead, 
-              ITARI offers flexible learning routes designed around your goals. Each programme blends theory, 
+              ITARI offers flexible learning routes designed around your goals. Each course blends theory, 
               practice, and reflection, helping you build competencies that open doors to international schools 
               and leadership positions.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {programs.map((program, index) => (
+            {courses.map((course, index) => (
               <Card
                 key={index}
                 className="shadow-soft hover:shadow-strong transition-bounce hover:-translate-y-2 animate-fade-in-up bg-gradient-card group cursor-pointer"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardHeader>
-                  <program.icon className="w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-smooth" />
+                  <course.icon className="w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-smooth" />
                   <div className="inline-block px-3 py-1 bg-accent/30 text-accent-foreground text-xs rounded-full mb-2">
-                    {program.subtitle}
+                    {course.subtitle}
                   </div>
-                  <CardTitle className="text-xl">{program.title}</CardTitle>
+                  <CardTitle className="text-xl">{course.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <CardDescription className="text-base leading-relaxed">
-                    {program.description}
+                    {course.description}
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -216,7 +218,7 @@ const Index = () => {
 
           <div className="text-center mt-12">
             <Button variant="default" size="lg" className="group">
-              Apply Now
+              See Course Details
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
@@ -254,11 +256,6 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg">
-              How It Works
-            </Button>
-          </div>
         </div>
       </section>
 
@@ -444,26 +441,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer CTA */}
-      <section className="py-20 bg-gradient-hero text-primary-foreground">
-        <div className="container mx-auto px-6 text-center animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Join a community shaping the future of global education
-          </h2>
-          <p className="text-xl mb-8 text-primary-foreground/90">
-            Get updates, attend webinars, and start your journey to becoming a leader of tomorrow
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="heroSecondary" size="lg">
-              Enquire Now
-            </Button>
-            <Button variant="outline" size="lg" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              Subscribe
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="py-12 bg-foreground text-background">
         <div className="container mx-auto px-6">
@@ -475,7 +452,7 @@ const Index = () => {
               </p>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">Programs</h4>
+              <h4 className="font-semibold mb-4">Courses</h4>
               <ul className="space-y-2 text-sm text-background/80">
                 <li>PGDE-I + IBEC</li>
                 <li>MA in Education</li>
