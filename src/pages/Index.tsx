@@ -122,7 +122,7 @@ const Index = () => {
                 Leadership Starts Here
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                At ITARI, education goes beyond pedagogy — it's a journey into purposeful leadership. 
+                At ITARI, education goes beyond pedagogy - it's a journey into purposeful leadership. 
                 Gain global educator credentials from leading boards like IB, Cambridge, and Birmingham City University. 
                 Learn through mentorship, research, and reflection, guided by master educators who've led classrooms 
                 and institutions worldwide. Join a community that's redefining what it means to teach, lead, and 
@@ -232,8 +232,8 @@ const Index = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Learning at ITARI is designed around doing, reflecting, and leading. You'll explore critical inquiry, 
-              practice real-world teaching, and design learning informed by AI tools and human insight. Each step — 
-              from reflective journaling to classroom immersion — builds your capacity to think deeply, act with 
+              practice real-world teaching, and design learning informed by AI tools and human insight. Each step - 
+              from reflective journaling to classroom immersion - builds your capacity to think deeply, act with 
               intention, and lead with confidence.
             </p>
           </div>
@@ -262,6 +262,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partner Logos */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <h3 className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-12">
+            Trusted by Global Education Leaders
+          </h3>
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              IB Logo
+            </div>
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              Cambridge
+            </div>
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              BCU Logo
+            </div>
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              Partner 4
+            </div>
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              Partner 5
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Impact & Outcomes */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
@@ -270,9 +296,9 @@ const Index = () => {
               Leadership in Action
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-12">
-              ITARI alumni don't just teach — they lead learning communities. From curriculum coordinators to 
+              ITARI alumni don't just teach - they lead learning communities. From curriculum coordinators to 
               IB programme heads, our graduates are driving innovation globally. Your ITARI journey ends with 
-              more than a certificate — it begins with career acceleration, mentorship, and lasting leadership.
+              more than a certificate - it begins with career acceleration, mentorship, and lasting leadership.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="p-6 bg-card rounded-xl shadow-soft">
@@ -291,6 +317,91 @@ const Index = () => {
             <Button variant="hero" size="xl" className="group">
               Join the Next Cohort
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Alumni Testimonials */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Voices of Leadership
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Hear from educators who transformed their careers through ITARI
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="shadow-soft hover:shadow-medium transition-smooth animate-fade-in-up">
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-full bg-gradient-accent flex items-center justify-center text-2xl font-bold text-primary-foreground">
+                    SP
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Priya Sharma</CardTitle>
+                    <CardDescription>IB Coordinator, Singapore</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground italic leading-relaxed">
+                  "ITARI didn't just give me credentials - it gave me the confidence to lead. The mentorship 
+                  and practical experience prepared me to step into an IB coordinator role at one of Singapore's 
+                  top international schools."
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-soft hover:shadow-medium transition-smooth animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-full bg-gradient-accent flex items-center justify-center text-2xl font-bold text-primary-foreground">
+                    RK
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Rajesh Kumar</CardTitle>
+                    <CardDescription>Head of Curriculum, Dubai</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground italic leading-relaxed">
+                  "The Cambridge CIDTL programme transformed how I approach teaching and learning. I now lead 
+                  curriculum design for a network of schools across the Middle East, applying evidence-based 
+                  frameworks I learned at ITARI."
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="shadow-soft hover:shadow-medium transition-smooth animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <CardHeader>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-full bg-gradient-accent flex items-center justify-center text-2xl font-bold text-primary-foreground">
+                    AM
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">Anita Mehta</CardTitle>
+                    <CardDescription>Principal, International School</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground italic leading-relaxed">
+                  "ITARI's MA in Education opened doors I never thought possible. Within two years of graduating, 
+                  I moved from classroom teaching to leading an entire school. The leadership training was 
+                  invaluable."
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <Button variant="outline" size="lg">
+              See Alumni Stories
             </Button>
           </div>
         </div>
