@@ -4,6 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Header from "@/components/Header";
 import heroImage from "@/assets/hero-indian-teachers.jpg";
+import logoBirmingham from "@/assets/logo-birmingham.png";
+import logoCambridge from "@/assets/logo-cambridge.png";
+import logoHelsinki from "@/assets/logo-helsinki.png";
+import logoWindsor from "@/assets/logo-windsor.png";
 
 const Index = () => {
   const courses = [
@@ -122,20 +126,17 @@ const Index = () => {
             Trusted by Global Education Leaders
           </h3>
           <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              IB Logo
+            <div className="w-48 h-24 bg-card rounded-lg shadow-soft flex items-center justify-center p-4 hover:shadow-medium transition-smooth">
+              <img src={logoBirmingham} alt="Birmingham City University" className="w-full h-full object-contain" />
             </div>
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              Cambridge
+            <div className="w-48 h-24 bg-card rounded-lg shadow-soft flex items-center justify-center p-4 hover:shadow-medium transition-smooth">
+              <img src={logoCambridge} alt="Cambridge Assessment International Education" className="w-full h-full object-contain" />
             </div>
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              BCU Logo
+            <div className="w-48 h-24 bg-card rounded-lg shadow-soft flex items-center justify-center p-4 hover:shadow-medium transition-smooth">
+              <img src={logoHelsinki} alt="University of Helsinki" className="w-full h-full object-contain" />
             </div>
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              Partner 4
-            </div>
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              Partner 5
+            <div className="w-48 h-24 bg-card rounded-lg shadow-soft flex items-center justify-center p-4 hover:shadow-medium transition-smooth">
+              <img src={logoWindsor} alt="University of Windsor" className="w-full h-full object-contain" />
             </div>
           </div>
         </div>
