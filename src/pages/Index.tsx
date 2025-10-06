@@ -115,6 +115,32 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partner Logos */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <h3 className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-12">
+            Trusted by Global Education Leaders
+          </h3>
+          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              IB Logo
+            </div>
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              Cambridge
+            </div>
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              BCU Logo
+            </div>
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              Partner 4
+            </div>
+            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
+              Partner 5
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose ITARI */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-6">
@@ -256,32 +282,6 @@ const Index = () => {
             ))}
           </div>
 
-        </div>
-      </section>
-
-      {/* Partner Logos */}
-      <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-6">
-          <h3 className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-12">
-            Trusted by Global Education Leaders
-          </h3>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-16">
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              IB Logo
-            </div>
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              Cambridge
-            </div>
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              BCU Logo
-            </div>
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              Partner 4
-            </div>
-            <div className="w-32 h-20 bg-card rounded-lg shadow-soft flex items-center justify-center text-muted-foreground font-semibold text-sm hover:shadow-medium transition-smooth">
-              Partner 5
-            </div>
-          </div>
         </div>
       </section>
 
